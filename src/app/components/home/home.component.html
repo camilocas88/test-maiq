@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="grid">
+        <div *ngFor="let r of results" class="card">
+            <div>
+                <div class="card-header"> {{r.display_title}} </div>
+                <div class="card-img">
+                    <img src="{{r.multimedia.src}} " alt="">
+                </div>
+                <div class="card-desc">
+                    <small><i>{{r.publication_date}}</i> </small>
+                    <p>{{r.summary_short}} </p>
+                </div>
+                <div class="btn--group">
+                    <a [routerLink]="[ '/detail', r.display_title ]" class="btn btn--primary">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

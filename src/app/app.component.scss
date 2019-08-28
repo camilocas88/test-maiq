@@ -1,0 +1,9 @@
+@import '../styles/main';
+
+
+h2{
+    @media #{$mediaMobile}{
+        background: red!important;
+        color: white !important
+    }
+}

@@ -1,0 +1,21 @@
+$mediaXMobile: "only screen and (max-width : 480px)";
+$mediaMobile: "only screen and (max-width : 767px)";
+$mediaTablet: "only screen and (max-width : 991px)";
+$mediaMTablet: "only screen and (max-width : 1180px)";
+$mediaLaptop: "only screen and (max-width : 1288px)";
+$mediaLaptop2: "only screen and (max-width : 1366px)";
+$mediaLaptop3: "only screen and (max-width : 1440px)";
+$mediaDesktop: "only screen and (max-width : 1920px)";
+
+$mediaXS: "only screen and (max-width : 479px)";
+$mediaSM: "only screen and (min-width : 480px) and (max-width: 767px)";
+$mediaXP: "only screen and (min-width : 375px) and (max-width: 375px)";
+$mediaMD: "only screen and (min-width : 768px) and (max-width: 991px)";
+$mediaLG: "only screen and (min-width : 992px) and (max-width: 1199px)";
+$mediaXL: "only screen and (min-width : 1200px)";
+
+$ie : "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)";
+
+// @media #{$mediaMobile}{
+// 	background-color: red!important;
+// }

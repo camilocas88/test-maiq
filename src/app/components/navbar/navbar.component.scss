@@ -1,0 +1,107 @@
+@import '../../../styles/main.scss';
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: $bg-color;
+    position: relative;
+
+    .nav-header {
+    display: inline;
+      .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        width: 55px;
+        a>img{
+          border-radius: 50%;
+          &:hover{
+            opacity: 0.8;
+            @include transition
+          }
+        }
+      }
+    }
+
+    .nav-btn {
+      display: none;
+      @media #{$mediaMobile}{
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: -24px;
+      }
+      label  {
+        @media #{$mediaMobile}{
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+
+          &:hover{
+            background-color: $primary-color;
+            @include transition
+          }
+        }
+
+        span{
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid white;
+        }
+      }      
+    }
+    .nav-links {
+      display: flex;
+      float: right;
+      font-size: 18px;
+      a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          background-color: $primary-color;
+          @include transition
+        }
+
+        @media #{$mediaMobile}{
+          display: block;
+         width: 100%;
+
+        }
+      }
+
+      @media #{$mediaMobile}{
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: $bg-color;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+    }
+    #nav-check {
+      display: none;
+      &:not(:checked) ~ .nav-links {
+        @media #{$mediaMobile}{
+          height: 0px;
+        }
+      }
+      &:checked ~ .nav-links{
+        @media #{$mediaMobile}{
+          height: calc(80vh - 50px);
+          overflow-y: auto;
+          z-index: 1;
+          text-align: center
+        }
+      }
+    }  
+}
+  
+  

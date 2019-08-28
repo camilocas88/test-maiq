@@ -1,0 +1,23 @@
+<div class="container">
+    <div *ngFor="let r of results" class="card">
+        <div>
+            <div class="card-header">
+                <h1>{{r.headline}}</h1>
+            </div>
+            <div class="container">
+                <div class="card-desc container--review">
+                    <small><i>{{r.publication_date}}</i> </small>
+                    <p class="card-desc--review">{{r.summary_short}} </p>
+                </div>
+                <div class="card-img ">
+                    <img class="card-img--review" src="{{r.multimedia.src}} " alt="">
+                </div>
+                <p class="container--review">BY {{r.byline}}</p>
+                <div class="container--review btn--group">
+                    <a [routerLink]="[ '/' ]" class="btn btn--primary">Back</a>
+                    <a href="{{r.link.url}}"  target="_blank" class="btn btn--primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

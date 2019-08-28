@@ -1,0 +1,41 @@
+/* VARIABLES */
+
+// Colors
+
+$primary-color: rgba(0, 0, 0, 0.3);
+$secondary-color: rgba(92, 3, 3, 0.699);
+$bg-color: #4d4d4d;
+
+$black: #000;
+$lBlack: #292929;
+$blue: #1DA1F2;
+
+$white: #FFF;
+
+$orange: #f5ce21;
+
+$red: #e31d1a;
+
+$txtGray: #dfdfdf; 
+
+// Global Font
+$fontFamily: arial, sans-serif;
+$baseFont: 16;
+
+// Loader
+$bgLoader: $orange;
+$colorLoader: $red;
+
+$widthLoader: 100px;
+
+// -- to animation
+$colorLoader1: red;
+$colorLoader2: green;
+$colorLoader3: purple;
+$colorLoader4: yellow;
+
+// MODAL
+$bgModal: $black;
+$maxWModal: 600px;
+$minHModal: 300px;
+$maxHModal: 400px;

@@ -1,0 +1,63 @@
+label.btn {
+	input {
+		display: none !important;
+	}
+}
+
+.btn {
+	@include flex(center,center,nowrap,inline-flex);
+	vertical-align: middle;
+	margin: auto;
+	line-height: 1.5;
+	border: 1px solid transparent;
+	outline: none;
+	text-align: center;
+	border-radius: .125rem;
+	padding: .4rem 1.2rem;
+	cursor: pointer;
+	@include transition;
+
+	&--large{
+		padding: .3rem 1.5rem;
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+
+	&--small{
+		padding: .25rem .5rem;
+    	font-size: .875rem;
+	}
+	&--primary{
+		background: transparent;
+		color: black;
+		border: 1px solid $lBlack;
+			&:hover{
+			background: lighten($primary-color, $amount: 40);
+			color: black;
+		}
+	}
+
+	&--secondary{
+		background: transparent;
+		color: $secondary-color;
+		border: 1px solid $secondary-color;
+			&:hover{
+			background: lighten($secondary-color, $amount: 30);
+		}
+	}
+	
+}
+
+.btn--group{
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+
+
+
+
+
+

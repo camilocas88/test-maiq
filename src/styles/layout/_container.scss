@@ -1,0 +1,105 @@
+.container {
+    width: 96%;
+    max-width: 1200px;
+    margin: auto;
+    @media #{$mediaMobile}{
+        width: 90%;
+    }
+    &--general {
+        background: $black;
+        overflow: hidden;
+    }
+    &--limit {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    &--review{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        @media #{$mediaMobile}{
+            width: 100%;
+        }
+    }
+}
+
+
+.card{    
+	width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border: 4px;
+    transform-style: preserve-3d;
+    margin: 10px 5px;
+
+    &-header{
+        border-bottom: 1px solid #ebeff2;
+        padding: 19px 0;
+        text-align: center;
+        color: #59687f;
+        font-size: 19px;
+        position: relative;
+
+        h1{
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            @media #{$mediaMobile}{
+                font-size: 2.2rem
+            }
+        }
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        img{       
+            width: 100%;
+        }
+        &--review{
+            width: 40% !important;
+            @media #{$mediaMobile}{
+                width: 100% !important;
+            }
+        }
+    }
+
+    &-desc{
+        padding: 1.25rem;
+        i{
+            font-weight: lighter;            
+        }
+        p{
+            color: #747373;
+            font-size: 14px;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0px;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        &--review{
+            font-size: 1.5rem !important;
+        }
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    
+    @media #{$mediaTablet}{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media #{$mediaMobile}{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
