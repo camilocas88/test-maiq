@@ -12,30 +12,13 @@ $blue: #1DA1F2;
 
 $white: #FFF;
 
-$orange: #f5ce21;
 
-$red: #e31d1a;
-
-$txtGray: #dfdfdf; 
 
 // Global Font
 $fontFamily: arial, sans-serif;
 $baseFont: 16;
 
-// Loader
-$bgLoader: $orange;
-$colorLoader: $red;
+//shadow
 
-$widthLoader: 100px;
+$box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
-// -- to animation
-$colorLoader1: red;
-$colorLoader2: green;
-$colorLoader3: purple;
-$colorLoader4: yellow;
-
-// MODAL
-$bgModal: $black;
-$maxWModal: 600px;
-$minHModal: 300px;
-$maxHModal: 400px;

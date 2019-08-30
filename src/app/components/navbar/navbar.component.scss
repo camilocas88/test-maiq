@@ -3,7 +3,21 @@
     height: 50px;
     width: 100%;
     background-color: $bg-color;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $box-shadow;
+
+    p{
+      color: white;
+      font-size: 1.5rem;
+      @media #{$mediaMobile}{
+        display: none;
+      }
+    }
 
     .nav-header {
     display: inline;
@@ -53,8 +67,7 @@
       }      
     }
     .nav-links {
-      display: flex;
-      float: right;
+      text-align: center;
       font-size: 18px;
       a {
         display: inline-block;
@@ -95,7 +108,7 @@
       }
       &:checked ~ .nav-links{
         @media #{$mediaMobile}{
-          height: calc(80vh - 50px);
+          height: calc(30vh - 50px);
           overflow-y: auto;
           z-index: 1;
           text-align: center

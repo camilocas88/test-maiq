@@ -1,14 +1,3 @@
-// <div (click)="openMenu()" class="hamburger-menu " >
-//   <div  class="bar" [ngClass]="{'animate' : menuHidden == false }" ></div>
-// </div>
-
-// menuHidden: boolean = true
-
-//   openMenu(){
-//     this.menuHidden = !this.menuHidden
-//   }
-
-
 $bar-width: 25px;
 $bar-height: 3px;
 $bar-spacing: 8px;

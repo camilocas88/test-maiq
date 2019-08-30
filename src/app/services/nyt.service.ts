@@ -16,11 +16,11 @@ export class NytService {
   */
 
  
-  getMoviesService(section: string = 'all') {
+  getMoviesService(section: string, order: string = 'by-publication-date') {
     let params: HttpParams = new HttpParams();
     params = params.set('api-key', environment.apikey);
-    return this.http.get(`${environment.apiUrl}/reviews/${section}.json`, { params });
-  }
+    return this.http.get(`${environment.apiUrl}/reviews/${section}.json?=${order}`, { params });
+  } 
   
   
    /*

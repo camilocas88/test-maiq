@@ -29,7 +29,7 @@
 .card{    
 	width: 100%;
     background: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: $box-shadow;
     border: 4px;
     transform-style: preserve-3d;
     margin: 10px 5px;
@@ -55,7 +55,7 @@
     &-img {
         display: flex;
         justify-content: center;
-        img{       
+        img, a{       
             width: 100%;
         }
         &--review{
@@ -68,6 +68,10 @@
 
     &-desc{
         padding: 1.25rem;
+        @media #{$mediaMobile}{
+            padding: 10px;
+            text-align: justify;
+        }
         i{
             font-weight: lighter;            
         }
