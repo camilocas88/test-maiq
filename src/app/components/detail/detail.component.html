@@ -14,7 +14,7 @@
                 </div>
                 <p class="container--review">BY {{r.byline}}</p>
                 <div class="container--review btn--group">
-                    <a [routerLink]="[ '/' ]" class="btn btn--primary">Back</a>
+                    <a  (click)="onBack()" class="btn btn--primary">Back</a>
                     <a href="{{r.link.url}}"  target="_blank" class="btn btn--primary">Read More</a>
                 </div>
             </div>

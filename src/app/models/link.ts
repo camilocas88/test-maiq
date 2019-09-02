@@ -1,5 +1,5 @@
-export class Link {
-    titulo?: string;
+export interface Link {
+    suggested_link_text?: string;
+    type?: string;
     url?: string;
-    textLin?: string;
 }

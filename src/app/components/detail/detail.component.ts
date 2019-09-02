@@ -20,13 +20,11 @@ export class DetailComponent implements OnInit {
     private _nytService: NytService,
     private _route: ActivatedRoute,
     private _router: Router,
-    private store: Store<any>) { }
+    ) { }
 
   ngOnInit() {
-    this.detail = this._route.snapshot.params
     let title = this._route.snapshot.paramMap.get('title')
     this.title = ` ${title}`
-    console.log('this.title', title);
     
     
     this._route.params.subscribe(
@@ -41,7 +39,7 @@ export class DetailComponent implements OnInit {
 
 
  onBack(){
-    this._router.navigate['/']
+    this._router.navigate(['/'])
  }
 
 }

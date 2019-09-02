@@ -13,15 +13,12 @@ export class NytService {
   /*
     @function: Get a products suggestion
     @returns: Product as JSON
-  */
-
- 
+  */ 
   getMoviesService(section: string, order: string = 'by-publication-date') {
     let params: HttpParams = new HttpParams();
     params = params.set('api-key', environment.apikey);
     return this.http.get(`${environment.apiUrl}/reviews/${section}.json?=${order}`, { params });
   } 
-  
   
    /*
     @function: Retrieves  products based on a DATA
